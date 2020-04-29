@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:romeo-pcb-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
+L romeo-pcb-rescue:ATmega328P-PU-MCU_Microchip_ATmega U1
 U 1 1 5D2C1379
 P 2500 5425
 F 0 "U1" H 2425 5550 50  0000 R CNN
@@ -90,7 +89,7 @@ L Device:Polyfuse_Small F1
 U 1 1 5D2CCADB
 P 8000 4025
 F 0 "F1" H 8068 4071 50  0000 L CNN
-F 1 "100mA" H 8068 3980 50  0000 L CNN
+F 1 "500mA" H 8068 3980 50  0000 L CNN
 F 2 "cftkb:polyfuse_5.1mm" H 8050 3825 50  0001 L CNN
 F 3 "~" H 8000 4025 50  0001 C CNN
 	1    8000 4025
@@ -365,7 +364,7 @@ D-
 Text GLabel 3100 5725 2    50   Input ~ 0
 reset
 $Comp
-L keyboard_parts:SW_PUSH RESET1
+L romeo-pcb-rescue:SW_PUSH-keyboard_parts RESET1
 U 1 1 5D2FCD08
 P 4275 4300
 F 0 "RESET1" H 4275 4555 50  0000 C CNN
@@ -485,7 +484,7 @@ $EndComp
 Wire Wire Line
 	5700 4425 5700 4575
 $Comp
-L keyboard_parts:SW_PUSH BOOT1
+L romeo-pcb-rescue:SW_PUSH-keyboard_parts BOOT1
 U 1 1 5D2C0447
 P 4275 4950
 F 0 "BOOT1" H 4275 5205 50  0000 C CNN
@@ -517,7 +516,7 @@ row1
 Text GLabel 3100 4725 2    50   Input ~ 0
 sck
 $Comp
-L Connector:AVR-ISP-6 J1
+L romeo-pcb-rescue:AVR-ISP-6-Connector J1
 U 1 1 5D2C325D
 P 5750 6250
 F 0 "J1" H 5470 6346 50  0000 R CNN
@@ -1663,7 +1662,7 @@ Connection ~ 9350 2950
 Wire Wire Line
 	9350 2950 10200 2950
 Wire Wire Line
-	900  2375 2575 2375
+	900  2375 1725 2375
 Connection ~ 2575 2375
 Wire Wire Line
 	2575 2375 3400 2375
@@ -1824,7 +1823,7 @@ Wire Wire Line
 	2325 1100 2325 1625
 Connection ~ 2325 1625
 Wire Wire Line
-	2325 1625 2325 2700
+	2325 1625 2325 2125
 Wire Wire Line
 	1500 1100 1500 1625
 Connection ~ 1500 1625
@@ -2005,4 +2004,56 @@ Wire Wire Line
 Wire Wire Line
 	-25  1625 -25  1575
 Connection ~ 900  1625
+$Comp
+L keyboard_parts:KEYSW SW46
+U 1 1 5DDA954C
+P 300 2075
+F 0 "SW46" H 300 2308 60  0000 C CNN
+F 1 "KEYSW" H 300 1975 60  0001 C CNN
+F 2 "cftkb:SW_Cherry_MX1A_1.25u_PCBNOSCREEN" H 300 2075 60  0001 C CNN
+F 3 "" H 300 2075 60  0000 C CNN
+	1    300  2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  2075 1150 2075
+Wire Wire Line
+	1150 2075 1150 2125
+Wire Wire Line
+	1150 2125 1500 2125
+Wire Wire Line
+	0    2075 0    2125
+Wire Wire Line
+	0    2125 900  2125
+Connection ~ 900  2125
+$Comp
+L keyboard_parts:KEYSW SW47
+U 1 1 5DDEC3B1
+P 2025 2125
+F 0 "SW47" H 2025 2358 60  0000 C CNN
+F 1 "KEYSW" H 2025 2025 60  0001 C CNN
+F 2 "cftkb:SW_Cherry_MX1A_1.00u_PCB-NOSCREEN" H 2025 2125 60  0001 C CNN
+F 3 "" H 2025 2125 60  0000 C CNN
+	1    2025 2125
+	1    0    0    -1  
+$EndComp
+Connection ~ 2325 2125
+Wire Wire Line
+	2325 2125 2325 2700
+$Comp
+L Device:D_Small D47
+U 1 1 5DDEE842
+P 1725 2275
+F 0 "D47" V 1771 2207 50  0000 R CNN
+F 1 "D_Small" V 1680 2207 50  0000 R CNN
+F 2 "cftkb:D_DO-35_SOD27_P5.08mm_Horizontal" V 1725 2275 50  0001 C CNN
+F 3 "~" V 1725 2275 50  0001 C CNN
+	1    1725 2275
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1725 2375
+Wire Wire Line
+	1725 2375 2575 2375
+Wire Wire Line
+	1725 2125 1725 2175
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:romeo-pcb-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,356 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L romeo-pcb-rescue:ATmega328P-PU-MCU_Microchip_ATmega U1
-U 1 1 5D2C1379
-P 2500 5425
-F 0 "U1" H 2425 5550 50  0000 R CNN
-F 1 "ATmega328P-PU" H 2700 5450 50  0000 R CNN
-F 2 "Package_DIP:DIP-28_W7.62mm" H 2500 5425 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 2500 5425 50  0001 C CNN
-	1    2500 5425
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1900 4225
-Wire Wire Line
-	2500 3925 2600 3925
-$Comp
-L power:+5V #PWR0101
-U 1 1 5D2C3C49
-P 2600 3925
-F 0 "#PWR0101" H 2600 3775 50  0001 C CNN
-F 1 "+5V" H 2615 4098 50  0000 C CNN
-F 2 "" H 2600 3925 50  0001 C CNN
-F 3 "" H 2600 3925 50  0001 C CNN
-	1    2600 3925
-	1    0    0    -1  
-$EndComp
-Connection ~ 2600 3925
-$Comp
-L power:GND #PWR0102
-U 1 1 5D2C3E01
-P 2500 6925
-F 0 "#PWR0102" H 2500 6675 50  0001 C CNN
-F 1 "GND" H 2505 6752 50  0000 C CNN
-F 2 "" H 2500 6925 50  0001 C CNN
-F 3 "" H 2500 6925 50  0001 C CNN
-	1    2500 6925
-	1    0    0    -1  
-$EndComp
-$Comp
-L Type-C:USB_C_GCT_USB4085 USB1
-U 1 1 5D2C4195
-P 7450 5175
-F 0 "USB1" H 7281 6212 60  0000 C CNN
-F 1 "USB_C_GCT_USB4085" H 7281 6106 60  0000 C CNN
-F 2 "cftkb:USB_C_GCT_USB4085" H 7450 5175 60  0001 C CNN
-F 3 "" H 7450 5175 60  0001 C CNN
-	1    7450 5175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 4525 7550 4425
-Wire Wire Line
-	7550 5825 7550 5925
-Wire Wire Line
-	7550 5725 7550 5625
-Wire Wire Line
-	7550 4725 7550 4625
-Connection ~ 7550 4425
-Wire Wire Line
-	7550 5925 7550 6025
-Connection ~ 7550 5925
-$Comp
-L power:GND #PWR0103
-U 1 1 5D2CCA55
-P 8600 6025
-F 0 "#PWR0103" H 8600 5775 50  0001 C CNN
-F 1 "GND" H 8605 5852 50  0000 C CNN
-F 2 "" H 8600 6025 50  0001 C CNN
-F 3 "" H 8600 6025 50  0001 C CNN
-	1    8600 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 5D2CCADB
-P 8000 4025
-F 0 "F1" H 8068 4071 50  0000 L CNN
-F 1 "500mA" H 8068 3980 50  0000 L CNN
-F 2 "cftkb:polyfuse_5.1mm" H 8050 3825 50  0001 L CNN
-F 3 "~" H 8000 4025 50  0001 C CNN
-	1    8000 4025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 4725 7800 4725
-Wire Wire Line
-	8000 4725 8000 4125
-Connection ~ 7550 4725
-$Comp
-L power:+5V #PWR0104
-U 1 1 5D2CE3B5
-P 8000 3925
-F 0 "#PWR0104" H 8000 3775 50  0001 C CNN
-F 1 "+5V" H 8015 4098 50  0000 C CNN
-F 2 "" H 8000 3925 50  0001 C CNN
-F 3 "" H 8000 3925 50  0001 C CNN
-	1    8000 3925
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0105
-U 1 1 5D2CE436
-P 7800 4725
-F 0 "#PWR0105" H 7800 4575 50  0001 C CNN
-F 1 "VCC" H 7817 4898 50  0000 C CNN
-F 2 "" H 7800 4725 50  0001 C CNN
-F 3 "" H 7800 4725 50  0001 C CNN
-	1    7800 4725
-	1    0    0    -1  
-$EndComp
-Connection ~ 7800 4725
-Wire Wire Line
-	7800 4725 8000 4725
-Wire Wire Line
-	8600 4425 8600 4925
-Wire Wire Line
-	7550 4425 8600 4425
-Wire Wire Line
-	7550 6025 8600 6025
-Connection ~ 7550 6025
-Connection ~ 8600 6025
-$Comp
-L Device:R_Small R3
-U 1 1 5D2D1BCE
-P 8500 5525
-F 0 "R3" V 8304 5525 50  0000 C CNN
-F 1 "5.1K" V 8500 5525 39  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 8500 5525 50  0001 C CNN
-F 3 "~" H 8500 5525 50  0001 C CNN
-	1    8500 5525
-	0    1    1    0   
-$EndComp
-Connection ~ 8600 5525
-Wire Wire Line
-	8600 5525 8600 6025
-$Comp
-L Device:R_Small R2
-U 1 1 5D2D1C79
-P 8500 4925
-F 0 "R2" V 8320 4925 50  0000 C CNN
-F 1 "5.1K" V 8500 4925 39  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 8500 4925 50  0001 C CNN
-F 3 "~" H 8500 4925 50  0001 C CNN
-	1    8500 4925
-	0    1    1    0   
-$EndComp
-Connection ~ 8600 4925
-Wire Wire Line
-	8600 4925 8600 5525
-Wire Wire Line
-	7550 4925 8400 4925
-Wire Wire Line
-	7550 5525 8400 5525
-Wire Wire Line
-	7550 5725 8000 5725
-Wire Wire Line
-	8000 5725 8000 4725
-Connection ~ 7550 5725
-Connection ~ 8000 4725
-$Comp
-L Device:R_Small R4
-U 1 1 5D2D6D79
-P 9250 5025
-F 0 "R4" V 9350 5025 50  0000 C CNN
-F 1 "75R" V 9250 5025 39  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9250 5025 50  0001 C CNN
-F 3 "~" H 9250 5025 50  0001 C CNN
-	1    9250 5025
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5D2D6E90
-P 9250 5125
-F 0 "R5" V 9350 5125 50  0000 C CNN
-F 1 "75R" V 9250 5125 39  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9250 5125 50  0001 C CNN
-F 3 "~" H 9250 5125 50  0001 C CNN
-	1    9250 5125
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7550 5125 8250 5125
-$Comp
-L Device:R_Small R1
-U 1 1 5D2DAA5C
-P 8200 4725
-F 0 "R1" H 8259 4771 50  0000 L CNN
-F 1 "1.5K" V 8200 4675 39  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 8200 4725 50  0001 C CNN
-F 3 "~" H 8200 4725 50  0001 C CNN
-	1    8200 4725
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 5D2DAAF6
-P 8200 4625
-F 0 "#PWR0106" H 8200 4475 50  0001 C CNN
-F 1 "+5V" H 8215 4798 50  0000 C CNN
-F 2 "" H 8200 4625 50  0001 C CNN
-F 3 "" H 8200 4625 50  0001 C CNN
-	1    8200 4625
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Zener_Small D45
-U 1 1 5D2DC8D8
-P 8750 5425
-F 0 "D45" V 8650 5325 50  0000 L CNN
-F 1 "3.6V" V 8900 5325 50  0000 L CNN
-F 2 "cftkb:D_DO-35_SOD27_P5.08mm_Horizontal" V 8750 5425 50  0001 C CNN
-F 3 "~" V 8750 5425 50  0001 C CNN
-	1    8750 5425
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener_Small D46
-U 1 1 5D2DC990
-P 8900 5425
-F 0 "D46" V 8800 5425 50  0000 L CNN
-F 1 "3.6V" V 8945 5493 50  0000 L CNN
-F 2 "cftkb:D_DO-35_SOD27_P5.08mm_Horizontal" V 8900 5425 50  0001 C CNN
-F 3 "~" V 8900 5425 50  0001 C CNN
-	1    8900 5425
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8750 5325 8750 5025
-Connection ~ 8750 5025
-Wire Wire Line
-	8750 5025 8200 5025
-Wire Wire Line
-	8900 5325 8900 5125
-Connection ~ 8900 5125
-Wire Wire Line
-	8900 5125 9150 5125
-Wire Wire Line
-	8750 5525 8900 5525
-$Comp
-L power:GND #PWR0107
-U 1 1 5D2E287E
-P 8900 5525
-F 0 "#PWR0107" H 8900 5275 50  0001 C CNN
-F 1 "GND" H 8905 5352 50  0000 C CNN
-F 2 "" H 8900 5525 50  0001 C CNN
-F 3 "" H 8900 5525 50  0001 C CNN
-	1    8900 5525
-	1    0    0    -1  
-$EndComp
-Connection ~ 8900 5525
-Wire Wire Line
-	7550 5225 8100 5225
-Wire Wire Line
-	8100 5225 8100 5025
-Connection ~ 8100 5025
-Wire Wire Line
-	8100 5025 7550 5025
-Wire Wire Line
-	7550 5325 8250 5325
-Wire Wire Line
-	8250 5325 8250 5125
-Connection ~ 8250 5125
-Wire Wire Line
-	8250 5125 8900 5125
-NoConn ~ 7550 5425
-NoConn ~ 7550 4825
-Text GLabel 9350 5025 2    50   Input ~ 0
-D-
-Text GLabel 9350 5125 2    50   Input ~ 0
-D+
-Wire Wire Line
-	8750 5025 9150 5025
-Wire Wire Line
-	8200 5025 8200 4825
-Connection ~ 8200 5025
-Wire Wire Line
-	8200 5025 8100 5025
-$Comp
-L Device:Crystal Y1
-U 1 1 5D2EFB9F
-P 4175 5625
-F 0 "Y1" V 4129 5756 50  0000 L CNN
-F 1 "Crystal" V 4220 5756 50  0000 L CNN
-F 2 "cftkb:Crystal_HC49-4H_Vertical" H 4175 5625 50  0001 C CNN
-F 3 "~" H 4175 5625 50  0001 C CNN
-	1    4175 5625
-	0    1    1    0   
-$EndComp
-Text GLabel 4525 5475 2    50   Input ~ 0
-xtal1
-Text GLabel 4525 5775 2    50   Input ~ 0
-xtal2
-Wire Wire Line
-	4175 5475 4525 5475
-Wire Wire Line
-	4175 5775 4525 5775
-$Comp
-L Device:C_Small C2
-U 1 1 5D2F49EE
-P 4175 5975
-F 0 "C2" H 4225 6075 50  0000 L CNN
-F 1 "22p" H 4275 5975 50  0000 L CNN
-F 2 "cftkb:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4175 5975 50  0001 C CNN
-F 3 "~" H 4175 5975 50  0001 C CNN
-	1    4175 5975
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 5D2F4A78
-P 4025 5975
-F 0 "C1" H 3875 6075 50  0000 L CNN
-F 1 "22p" H 3775 5975 50  0000 L CNN
-F 2 "cftkb:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4025 5975 50  0001 C CNN
-F 3 "~" H 4025 5975 50  0001 C CNN
-	1    4025 5975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4175 5775 4175 5875
-Connection ~ 4175 5775
-Wire Wire Line
-	4175 5475 4025 5475
-Wire Wire Line
-	4025 5475 4025 5875
-Connection ~ 4175 5475
-Wire Wire Line
-	4025 6075 4175 6075
-$Comp
-L power:GND #PWR0108
-U 1 1 5D2FC0D2
-P 4175 6075
-F 0 "#PWR0108" H 4175 5825 50  0001 C CNN
-F 1 "GND" H 4180 5902 50  0000 C CNN
-F 2 "" H 4175 6075 50  0001 C CNN
-F 3 "" H 4175 6075 50  0001 C CNN
-	1    4175 6075
-	1    0    0    -1  
-$EndComp
-Connection ~ 4175 6075
-Text GLabel 3100 4825 2    50   Input ~ 0
-xtal1
-Text GLabel 3100 4925 2    50   Input ~ 0
-xtal2
-Text GLabel 3100 6125 2    50   Input ~ 0
-D+
-Text GLabel 3100 6225 2    50   Input ~ 0
-D-
-Text GLabel 3100 5725 2    50   Input ~ 0
-reset
 $Comp
 L romeo-pcb-rescue:SW_PUSH-keyboard_parts RESET1
 U 1 1 5D2FCD08
@@ -387,227 +38,8 @@ F 3 "" H 3975 4300 50  0001 C CNN
 $EndComp
 Text GLabel 4775 4300 2    50   Input ~ 0
 reset
-Wire Wire Line
-	4575 4300 4625 4300
 $Comp
-L Device:R_Small R6
-U 1 1 5D2FF982
-P 4625 4200
-F 0 "R6" H 4684 4238 50  0000 L CNN
-F 1 "10K" V 4625 4150 39  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 4625 4200 50  0001 C CNN
-F 3 "~" H 4625 4200 50  0001 C CNN
-	1    4625 4200
-	1    0    0    -1  
-$EndComp
-Connection ~ 4625 4300
-Wire Wire Line
-	4625 4300 4775 4300
-$Comp
-L power:+5V #PWR0110
-U 1 1 5D2FFA34
-P 4625 4100
-F 0 "#PWR0110" H 4625 3950 50  0001 C CNN
-F 1 "+5V" H 4640 4273 50  0000 C CNN
-F 2 "" H 4625 4100 50  0001 C CNN
-F 3 "" H 4625 4100 50  0001 C CNN
-	1    4625 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C3
-U 1 1 5D300139
-P 5550 4325
-F 0 "C3" H 5450 4475 50  0000 L CNN
-F 1 "4.7u" H 5400 4175 50  0000 L CNN
-F 2 "cftkb:CP_Radial_D4.0mm_P1.50mm" H 5550 4325 50  0001 C CNN
-F 3 "~" H 5550 4325 50  0001 C CNN
-	1    5550 4325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C4
-U 1 1 5D30056A
-P 5700 4325
-F 0 "C4" H 5650 4475 50  0000 L CNN
-F 1 "0.1u" H 5600 4175 50  0000 L CNN
-F 2 "cftkb:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5700 4325 50  0001 C CNN
-F 3 "~" H 5700 4325 50  0001 C CNN
-	1    5700 4325
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C5
-U 1 1 5D300637
-P 5850 4325
-F 0 "C5" H 5850 4475 50  0000 L CNN
-F 1 "0.1u" H 5800 4175 50  0000 L CNN
-F 2 "cftkb:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5850 4325 50  0001 C CNN
-F 3 "~" H 5850 4325 50  0001 C CNN
-	1    5850 4325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 4225 5700 4225
-Connection ~ 5700 4225
-Wire Wire Line
-	5700 4225 5850 4225
-$Comp
-L power:+5V #PWR0111
-U 1 1 5D3036AC
-P 5700 4075
-F 0 "#PWR0111" H 5700 3925 50  0001 C CNN
-F 1 "+5V" H 5715 4248 50  0000 C CNN
-F 2 "" H 5700 4075 50  0001 C CNN
-F 3 "" H 5700 4075 50  0001 C CNN
-	1    5700 4075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4225 5700 4075
-Wire Wire Line
-	5550 4425 5700 4425
-Connection ~ 5700 4425
-Wire Wire Line
-	5700 4425 5850 4425
-$Comp
-L power:GND #PWR0112
-U 1 1 5D308F2E
-P 5700 4575
-F 0 "#PWR0112" H 5700 4325 50  0001 C CNN
-F 1 "GND" H 5705 4402 50  0000 C CNN
-F 2 "" H 5700 4575 50  0001 C CNN
-F 3 "" H 5700 4575 50  0001 C CNN
-	1    5700 4575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 4425 5700 4575
-$Comp
-L romeo-pcb-rescue:SW_PUSH-keyboard_parts BOOT1
-U 1 1 5D2C0447
-P 4275 4950
-F 0 "BOOT1" H 4275 5205 50  0000 C CNN
-F 1 "BOOT" H 4275 5114 50  0000 C CNN
-F 2 "cftkb:SW_PUSH_6mm" H 4275 4950 60  0001 C CNN
-F 3 "" H 4275 4950 60  0000 C CNN
-	1    4275 4950
-	1    0    0    -1  
-$EndComp
-Text GLabel 4575 4950 2    50   Input ~ 0
-boot
-$Comp
-L power:GND #PWR0113
-U 1 1 5D2C0880
-P 3975 4950
-F 0 "#PWR0113" H 3975 4700 50  0001 C CNN
-F 1 "GND" H 3980 4777 50  0000 C CNN
-F 2 "" H 3975 4950 50  0001 C CNN
-F 3 "" H 3975 4950 50  0001 C CNN
-	1    3975 4950
-	1    0    0    -1  
-$EndComp
-Text GLabel 3100 6425 2    50   Input ~ 0
-boot
-Text GLabel 3100 4525 2    50   Input ~ 0
-row2
-Text GLabel 3100 4625 2    50   Input ~ 0
-row1
-Text GLabel 3100 4725 2    50   Input ~ 0
-sck
-$Comp
-L romeo-pcb-rescue:AVR-ISP-6-Connector J1
-U 1 1 5D2C325D
-P 5750 6250
-F 0 "J1" H 5470 6346 50  0000 R CNN
-F 1 "AVR-ISP-6" H 5470 6255 50  0000 R CNN
-F 2 "cftkb:AVR_ICSP_3x2" V 5500 6300 50  0001 C CNN
-F 3 " ~" H 4475 5700 50  0001 C CNN
-	1    5750 6250
-	1    0    0    -1  
-$EndComp
-Text GLabel 6150 6050 2    50   Input ~ 0
-row1
-Text GLabel 6150 6150 2    50   Input ~ 0
-row2
-Text GLabel 6150 6250 2    50   Input ~ 0
-sck
-Text GLabel 6150 6350 2    50   Input ~ 0
-reset
-$Comp
-L power:+5V #PWR0114
-U 1 1 5D2C35C8
-P 5650 5750
-F 0 "#PWR0114" H 5650 5600 50  0001 C CNN
-F 1 "+5V" H 5665 5923 50  0000 C CNN
-F 2 "" H 5650 5750 50  0001 C CNN
-F 3 "" H 5650 5750 50  0001 C CNN
-	1    5650 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5D2C366B
-P 5650 6650
-F 0 "#PWR0115" H 5650 6400 50  0001 C CNN
-F 1 "GND" H 5655 6477 50  0000 C CNN
-F 2 "" H 5650 6650 50  0001 C CNN
-F 3 "" H 5650 6650 50  0001 C CNN
-	1    5650 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED LED1
-U 1 1 5D2C3A43
-P 5925 5125
-F 0 "LED1" H 5917 4870 50  0000 C CNN
-F 1 "POWER" H 5917 4961 50  0000 C CNN
-F 2 "cftkb:LED_D3.0mm" H 5925 5125 50  0001 C CNN
-F 3 "~" H 5925 5125 50  0001 C CNN
-	1    5925 5125
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R7
-U 1 1 5D2C3C60
-P 5525 5125
-F 0 "R7" V 5329 5125 50  0000 C CNN
-F 1 "1.5K" V 5420 5125 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5525 5125 50  0001 C CNN
-F 3 "~" H 5525 5125 50  0001 C CNN
-	1    5525 5125
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR0116
-U 1 1 5D2C3FB7
-P 6175 5125
-F 0 "#PWR0116" H 6175 4975 50  0001 C CNN
-F 1 "+5V" H 6190 5298 50  0000 C CNN
-F 2 "" H 6175 5125 50  0001 C CNN
-F 3 "" H 6175 5125 50  0001 C CNN
-	1    6175 5125
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0117
-U 1 1 5D2C405E
-P 5225 5125
-F 0 "#PWR0117" H 5225 4875 50  0001 C CNN
-F 1 "GND" H 5230 4952 50  0000 C CNN
-F 2 "" H 5225 5125 50  0001 C CNN
-F 3 "" H 5225 5125 50  0001 C CNN
-	1    5225 5125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5225 5125 5425 5125
-Wire Wire Line
-	5625 5125 5775 5125
-Wire Wire Line
-	6075 5125 6175 5125
-$Comp
-L keyboard_parts:KEYSW SW0
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW0
 U 1 1 5DC32506
 P 1200 1100
 F 0 "SW0" H 1200 1333 60  0000 C CNN
@@ -618,7 +50,7 @@ F 3 "" H 1200 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW1
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW1
 U 1 1 5DC3250C
 P 2025 1100
 F 0 "SW1" H 2025 1333 60  0000 C CNN
@@ -629,7 +61,7 @@ F 3 "" H 2025 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW2
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW2
 U 1 1 5DC32512
 P 2875 1100
 F 0 "SW2" H 2875 1333 60  0000 C CNN
@@ -640,7 +72,7 @@ F 3 "" H 2875 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW3
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW3
 U 1 1 5DC345A5
 P 3700 1100
 F 0 "SW3" H 3700 1333 60  0000 C CNN
@@ -651,7 +83,7 @@ F 3 "" H 3700 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW4
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW4
 U 1 1 5DC345AB
 P 4525 1100
 F 0 "SW4" H 4525 1333 60  0000 C CNN
@@ -662,7 +94,7 @@ F 3 "" H 4525 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW5
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW5
 U 1 1 5DC345B1
 P 5375 1100
 F 0 "SW5" H 5375 1333 60  0000 C CNN
@@ -673,7 +105,7 @@ F 3 "" H 5375 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW6
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW6
 U 1 1 5DC438F7
 P 6275 1100
 F 0 "SW6" H 6275 1333 60  0000 C CNN
@@ -684,7 +116,7 @@ F 3 "" H 6275 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW7
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW7
 U 1 1 5DC438FD
 P 7100 1100
 F 0 "SW7" H 7100 1333 60  0000 C CNN
@@ -695,7 +127,7 @@ F 3 "" H 7100 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW8
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW8
 U 1 1 5DC43903
 P 7950 1100
 F 0 "SW8" H 7950 1333 60  0000 C CNN
@@ -706,7 +138,7 @@ F 3 "" H 7950 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW9
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW9
 U 1 1 5DC46306
 P 8825 1100
 F 0 "SW9" H 8825 1333 60  0000 C CNN
@@ -717,7 +149,7 @@ F 3 "" H 8825 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW10
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW10
 U 1 1 5DC4630C
 P 9650 1100
 F 0 "SW10" H 9650 1333 60  0000 C CNN
@@ -728,7 +160,7 @@ F 3 "" H 9650 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW11
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW11
 U 1 1 5DC46312
 P 10500 1100
 F 0 "SW11" H 10500 1333 60  0000 C CNN
@@ -739,7 +171,7 @@ F 3 "" H 10500 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW12
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW12
 U 1 1 5DC661DE
 P 1200 1625
 F 0 "SW12" H 1200 1858 60  0000 C CNN
@@ -750,7 +182,7 @@ F 3 "" H 1200 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW13
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW13
 U 1 1 5DC661E4
 P 2025 1625
 F 0 "SW13" H 2025 1858 60  0000 C CNN
@@ -761,7 +193,7 @@ F 3 "" H 2025 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW14
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW14
 U 1 1 5DC661EA
 P 2875 1625
 F 0 "SW14" H 2875 1858 60  0000 C CNN
@@ -772,7 +204,7 @@ F 3 "" H 2875 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW15
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW15
 U 1 1 5DC661F0
 P 3700 1625
 F 0 "SW15" H 3700 1858 60  0000 C CNN
@@ -783,7 +215,7 @@ F 3 "" H 3700 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW16
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW16
 U 1 1 5DC661F6
 P 4525 1625
 F 0 "SW16" H 4525 1858 60  0000 C CNN
@@ -794,7 +226,7 @@ F 3 "" H 4525 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW17
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW17
 U 1 1 5DC661FC
 P 5375 1625
 F 0 "SW17" H 5375 1858 60  0000 C CNN
@@ -805,7 +237,7 @@ F 3 "" H 5375 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW18
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW18
 U 1 1 5DC66202
 P 6275 1625
 F 0 "SW18" H 6275 1858 60  0000 C CNN
@@ -816,7 +248,7 @@ F 3 "" H 6275 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW19
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW19
 U 1 1 5DC66208
 P 7100 1625
 F 0 "SW19" H 7100 1858 60  0000 C CNN
@@ -827,7 +259,7 @@ F 3 "" H 7100 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW20
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW20
 U 1 1 5DC6620E
 P 7950 1625
 F 0 "SW20" H 7950 1858 60  0000 C CNN
@@ -838,7 +270,7 @@ F 3 "" H 7950 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW21
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW21
 U 1 1 5DC66214
 P 8825 1625
 F 0 "SW21" H 8825 1858 60  0000 C CNN
@@ -849,7 +281,7 @@ F 3 "" H 8825 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW22
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW22
 U 1 1 5DC66220
 P 10500 1625
 F 0 "SW22" H 10500 1858 60  0000 C CNN
@@ -860,7 +292,7 @@ F 3 "" H 10500 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW23
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW23
 U 1 1 5DC76E64
 P 1200 2125
 F 0 "SW23" H 1200 2358 60  0000 C CNN
@@ -871,7 +303,7 @@ F 3 "" H 1200 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW24
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW24
 U 1 1 5DC76E70
 P 2875 2125
 F 0 "SW24" H 2875 2358 60  0000 C CNN
@@ -882,7 +314,7 @@ F 3 "" H 2875 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW25
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW25
 U 1 1 5DC76E76
 P 3700 2125
 F 0 "SW25" H 3700 2358 60  0000 C CNN
@@ -893,7 +325,7 @@ F 3 "" H 3700 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW26
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW26
 U 1 1 5DC76E7C
 P 4525 2125
 F 0 "SW26" H 4525 2358 60  0000 C CNN
@@ -904,7 +336,7 @@ F 3 "" H 4525 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW27
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW27
 U 1 1 5DC76E82
 P 5375 2125
 F 0 "SW27" H 5375 2358 60  0000 C CNN
@@ -915,7 +347,7 @@ F 3 "" H 5375 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW28
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW28
 U 1 1 5DC76E88
 P 6275 2125
 F 0 "SW28" H 6275 2358 60  0000 C CNN
@@ -926,7 +358,7 @@ F 3 "" H 6275 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW29
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW29
 U 1 1 5DC76E8E
 P 7100 2125
 F 0 "SW29" H 7100 2358 60  0000 C CNN
@@ -937,7 +369,7 @@ F 3 "" H 7100 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW30
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW30
 U 1 1 5DC76E94
 P 7950 2125
 F 0 "SW30" H 7950 2358 60  0000 C CNN
@@ -948,7 +380,7 @@ F 3 "" H 7950 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW31
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW31
 U 1 1 5DC76E9A
 P 8825 2125
 F 0 "SW31" H 8825 2358 60  0000 C CNN
@@ -959,7 +391,7 @@ F 3 "" H 8825 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW32
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW32
 U 1 1 5DC76EA0
 P 9650 2125
 F 0 "SW32" H 9650 2358 60  0000 C CNN
@@ -970,7 +402,7 @@ F 3 "" H 9650 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW33
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW33
 U 1 1 5DC76EA6
 P 10500 2125
 F 0 "SW33" H 10500 2358 60  0000 C CNN
@@ -981,7 +413,7 @@ F 3 "" H 10500 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW34
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW34
 U 1 1 5DC92C4C
 P 1200 2700
 F 0 "SW34" H 1200 2933 60  0000 C CNN
@@ -992,7 +424,7 @@ F 3 "" H 1200 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW35
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW35
 U 1 1 5DC92C52
 P 2025 2700
 F 0 "SW35" H 2025 2933 60  0000 C CNN
@@ -1003,7 +435,7 @@ F 3 "" H 2025 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW36
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW36
 U 1 1 5DC92C58
 P 2875 2700
 F 0 "SW36" H 2875 2933 60  0000 C CNN
@@ -1014,7 +446,7 @@ F 3 "" H 2875 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW38
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW38
 U 1 1 5DC92C64
 P 4525 2700
 F 0 "SW38" H 4525 2933 60  0000 C CNN
@@ -1025,7 +457,7 @@ F 3 "" H 4525 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW40
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW40
 U 1 1 5DC92C70
 P 6275 2700
 F 0 "SW40" H 6275 2933 60  0000 C CNN
@@ -1036,7 +468,7 @@ F 3 "" H 6275 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW41
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW41
 U 1 1 5DC92C76
 P 7100 2700
 F 0 "SW41" H 7100 2933 60  0000 C CNN
@@ -1047,7 +479,7 @@ F 3 "" H 7100 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW42
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW42
 U 1 1 5DC92C82
 P 8825 2700
 F 0 "SW42" H 8825 2933 60  0000 C CNN
@@ -1058,7 +490,7 @@ F 3 "" H 8825 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW43
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW43
 U 1 1 5DC92C88
 P 9650 2700
 F 0 "SW43" H 9650 2933 60  0000 C CNN
@@ -1069,7 +501,7 @@ F 3 "" H 9650 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW44
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW44
 U 1 1 5DC92C8E
 P 10500 2700
 F 0 "SW44" H 10500 2933 60  0000 C CNN
@@ -1833,7 +1265,7 @@ Connection ~ 1500 2125
 Wire Wire Line
 	1500 2125 1500 2700
 $Comp
-L keyboard_parts:KEYSW SW39
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW39
 U 1 1 5DDDF5D3
 P 6225 3300
 F 0 "SW39" H 6225 3533 60  0000 C CNN
@@ -1844,7 +1276,7 @@ F 3 "" H 6225 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:KEYSW SW37
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW37
 U 1 1 5DDF43CC
 P 2800 3325
 F 0 "SW37" H 2800 3558 60  0000 C CNN
@@ -1954,36 +1386,8 @@ Wire Wire Line
 Wire Wire Line
 	6575 3300 6525 3300
 Connection ~ 6575 2700
-Text GLabel 3100 5625 2    50   Input ~ 0
-col0
-Text GLabel 3100 5525 2    50   Input ~ 0
-col1
-Text GLabel 3100 5425 2    50   Input ~ 0
-col2
-Text GLabel 3100 5925 2    50   Input ~ 0
-col3
-Text GLabel 3100 5325 2    50   Input ~ 0
-col4
-Text GLabel 3100 6025 2    50   Input ~ 0
-col5
-Text GLabel 3100 5225 2    50   Input ~ 0
-col6
-Text GLabel 3100 5125 2    50   Input ~ 0
-col7
-Text GLabel 3100 6325 2    50   Input ~ 0
-col8
-Text GLabel 3100 4225 2    50   Input ~ 0
-col9
-Text GLabel 3100 6625 2    50   Input ~ 0
-col10
-Text GLabel 3100 6525 2    50   Input ~ 0
-col11
-Text GLabel 3100 4325 2    50   Input ~ 0
-row0
-Text GLabel 3100 4425 2    50   Input ~ 0
-row3
 $Comp
-L keyboard_parts:KEYSW SW45
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW45
 U 1 1 5DC53CBA
 P 275 1575
 F 0 "SW45" H 275 1808 60  0000 C CNN
@@ -2005,7 +1409,7 @@ Wire Wire Line
 	-25  1625 -25  1575
 Connection ~ 900  1625
 $Comp
-L keyboard_parts:KEYSW SW46
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW46
 U 1 1 5DDA954C
 P 300 2075
 F 0 "SW46" H 300 2308 60  0000 C CNN
@@ -2027,7 +1431,7 @@ Wire Wire Line
 	0    2125 900  2125
 Connection ~ 900  2125
 $Comp
-L keyboard_parts:KEYSW SW47
+L romeo-pcb-rescue:KEYSW-keyboard_parts SW47
 U 1 1 5DDEC3B1
 P 2025 2125
 F 0 "SW47" H 2025 2358 60  0000 C CNN
@@ -2056,4 +1460,62 @@ Wire Wire Line
 	1725 2375 2575 2375
 Wire Wire Line
 	1725 2125 1725 2175
+Wire Wire Line
+	4575 4300 4775 4300
+$Comp
+L Keyboard_Parts:Pro_Micro U1
+U 1 1 5EB06895
+P 6550 4850
+F 0 "U1" H 6550 5665 50  0000 C CNN
+F 1 "Pro_Micro" H 6550 5574 50  0000 C CNN
+F 2 "keebio:ArduinoProMicro-TopSide" H 6500 4950 50  0001 C CNN
+F 3 "" H 6500 4950 50  0001 C CNN
+	1    6550 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch EC1
+U 1 1 5EB09C42
+P 8550 4400
+F 0 "EC1" H 8550 4767 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 8550 4676 50  0000 C CNN
+F 2 "" H 8400 4560 50  0001 C CNN
+F 3 "~" H 8550 4660 50  0001 C CNN
+	1    8550 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 4500 2    50   Input ~ 0
+reset
+Text GLabel 5900 4300 0    50   Input ~ 0
+row0
+Text GLabel 5900 4400 0    50   Input ~ 0
+row1
+Text GLabel 5900 4500 0    50   Input ~ 0
+row2
+Text GLabel 5900 4600 0    50   Input ~ 0
+row3
+Text GLabel 5900 4700 0    50   Input ~ 0
+col0
+Text GLabel 5900 4800 0    50   Input ~ 0
+col1
+Text GLabel 5900 4900 0    50   Input ~ 0
+col2
+Text GLabel 5900 5000 0    50   Input ~ 0
+col3
+Text GLabel 5900 5100 0    50   Input ~ 0
+col4
+Text GLabel 5900 5200 0    50   Input ~ 0
+col5
+Text GLabel 5900 5300 0    50   Input ~ 0
+col6
+Text GLabel 5900 5400 0    50   Input ~ 0
+col7
+Text GLabel 7200 5400 2    50   Input ~ 0
+col8
+Text GLabel 7200 5300 2    50   Input ~ 0
+col9
+Text GLabel 7200 5200 2    50   Input ~ 0
+col10
+Text GLabel 7200 5100 2    50   Input ~ 0
+col11
 $EndSCHEMATC
