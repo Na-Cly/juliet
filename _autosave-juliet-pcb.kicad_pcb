@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 38)
+    (drawings 39)
     (tracks 1014)
     (zones 0)
     (modules 109)
@@ -87,7 +87,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "Gerber/pcb/"))
   )
 
   (net 0 "")
@@ -5887,6 +5887,9 @@
     )
   )
 
+  (gr_text GPLv3 (at 269.2908 128.6002 90) (layer B.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
+  )
   (gr_text SPLIT (at 57.09285 118.29415) (layer F.SilkS) (tstamp 5DD8DD9C)
     (effects (font (size 1 1) (thickness 0.1)))
   )
@@ -6977,7 +6980,7 @@
   (segment (start 47.7774 89.5096) (end 47.7774 63.5) (width 0.25) (layer F.Cu) (net 62))
   (segment (start 47.7774 63.5) (end 50.1142 61.1632) (width 0.25) (layer F.Cu) (net 62))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5EABC47F) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -9295,7 +9298,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5EABC47C) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
