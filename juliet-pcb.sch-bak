@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:romeo-pcb-cache
+LIBS:juliet-pcb-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L romeo-pcb-rescue:SW_PUSH-keyboard_parts RESET1
+L juliet-pcb-rescue:SW_PUSH-keyboard_parts RESET1
 U 1 1 5D2FCD08
 P 4275 4300
 F 0 "RESET1" H 4275 4555 50  0000 C CNN
@@ -39,7 +39,7 @@ $EndComp
 Text GLabel 4775 4300 2    50   Input ~ 0
 reset
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW0
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW0
 U 1 1 5DC32506
 P 1200 1100
 F 0 "SW0" H 1200 1333 60  0000 C CNN
@@ -50,7 +50,7 @@ F 3 "" H 1200 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW1
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW1
 U 1 1 5DC3250C
 P 2025 1100
 F 0 "SW1" H 2025 1333 60  0000 C CNN
@@ -61,7 +61,7 @@ F 3 "" H 2025 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW2
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW2
 U 1 1 5DC32512
 P 2875 1100
 F 0 "SW2" H 2875 1333 60  0000 C CNN
@@ -72,7 +72,7 @@ F 3 "" H 2875 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW3
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW3
 U 1 1 5DC345A5
 P 3700 1100
 F 0 "SW3" H 3700 1333 60  0000 C CNN
@@ -83,7 +83,7 @@ F 3 "" H 3700 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW4
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW4
 U 1 1 5DC345AB
 P 4525 1100
 F 0 "SW4" H 4525 1333 60  0000 C CNN
@@ -94,7 +94,7 @@ F 3 "" H 4525 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW5
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW5
 U 1 1 5DC345B1
 P 5375 1100
 F 0 "SW5" H 5375 1333 60  0000 C CNN
@@ -105,7 +105,7 @@ F 3 "" H 5375 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW6
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW6
 U 1 1 5DC438F7
 P 6275 1100
 F 0 "SW6" H 6275 1333 60  0000 C CNN
@@ -116,7 +116,7 @@ F 3 "" H 6275 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW7
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW7
 U 1 1 5DC438FD
 P 7100 1100
 F 0 "SW7" H 7100 1333 60  0000 C CNN
@@ -127,7 +127,7 @@ F 3 "" H 7100 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW8
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW8
 U 1 1 5DC43903
 P 7950 1100
 F 0 "SW8" H 7950 1333 60  0000 C CNN
@@ -138,7 +138,7 @@ F 3 "" H 7950 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW9
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW9
 U 1 1 5DC46306
 P 8825 1100
 F 0 "SW9" H 8825 1333 60  0000 C CNN
@@ -149,7 +149,7 @@ F 3 "" H 8825 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW10
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW10
 U 1 1 5DC4630C
 P 9650 1100
 F 0 "SW10" H 9650 1333 60  0000 C CNN
@@ -160,7 +160,7 @@ F 3 "" H 9650 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW11
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW11
 U 1 1 5DC46312
 P 10500 1100
 F 0 "SW11" H 10500 1333 60  0000 C CNN
@@ -171,7 +171,7 @@ F 3 "" H 10500 1100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW12
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW12
 U 1 1 5DC661DE
 P 1200 1625
 F 0 "SW12" H 1200 1858 60  0000 C CNN
@@ -182,7 +182,7 @@ F 3 "" H 1200 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW13
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW13
 U 1 1 5DC661E4
 P 2025 1625
 F 0 "SW13" H 2025 1858 60  0000 C CNN
@@ -193,7 +193,7 @@ F 3 "" H 2025 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW14
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW14
 U 1 1 5DC661EA
 P 2875 1625
 F 0 "SW14" H 2875 1858 60  0000 C CNN
@@ -204,7 +204,7 @@ F 3 "" H 2875 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW15
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW15
 U 1 1 5DC661F0
 P 3700 1625
 F 0 "SW15" H 3700 1858 60  0000 C CNN
@@ -215,7 +215,7 @@ F 3 "" H 3700 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW16
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW16
 U 1 1 5DC661F6
 P 4525 1625
 F 0 "SW16" H 4525 1858 60  0000 C CNN
@@ -226,7 +226,7 @@ F 3 "" H 4525 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW17
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW17
 U 1 1 5DC661FC
 P 5375 1625
 F 0 "SW17" H 5375 1858 60  0000 C CNN
@@ -237,7 +237,7 @@ F 3 "" H 5375 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW18
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW18
 U 1 1 5DC66202
 P 6275 1625
 F 0 "SW18" H 6275 1858 60  0000 C CNN
@@ -248,7 +248,7 @@ F 3 "" H 6275 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW19
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW19
 U 1 1 5DC66208
 P 7100 1625
 F 0 "SW19" H 7100 1858 60  0000 C CNN
@@ -259,7 +259,7 @@ F 3 "" H 7100 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW20
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW20
 U 1 1 5DC6620E
 P 7950 1625
 F 0 "SW20" H 7950 1858 60  0000 C CNN
@@ -270,7 +270,7 @@ F 3 "" H 7950 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW21
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW21
 U 1 1 5DC66214
 P 8825 1625
 F 0 "SW21" H 8825 1858 60  0000 C CNN
@@ -281,7 +281,7 @@ F 3 "" H 8825 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW22
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW22
 U 1 1 5DC66220
 P 10500 1625
 F 0 "SW22" H 10500 1858 60  0000 C CNN
@@ -292,7 +292,7 @@ F 3 "" H 10500 1625 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW23
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW23
 U 1 1 5DC76E64
 P 1200 2125
 F 0 "SW23" H 1200 2358 60  0000 C CNN
@@ -303,7 +303,7 @@ F 3 "" H 1200 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW24
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW24
 U 1 1 5DC76E70
 P 2875 2125
 F 0 "SW24" H 2875 2358 60  0000 C CNN
@@ -314,7 +314,7 @@ F 3 "" H 2875 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW25
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW25
 U 1 1 5DC76E76
 P 3700 2125
 F 0 "SW25" H 3700 2358 60  0000 C CNN
@@ -325,7 +325,7 @@ F 3 "" H 3700 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW26
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW26
 U 1 1 5DC76E7C
 P 4525 2125
 F 0 "SW26" H 4525 2358 60  0000 C CNN
@@ -336,7 +336,7 @@ F 3 "" H 4525 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW27
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW27
 U 1 1 5DC76E82
 P 5375 2125
 F 0 "SW27" H 5375 2358 60  0000 C CNN
@@ -347,7 +347,7 @@ F 3 "" H 5375 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW28
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW28
 U 1 1 5DC76E88
 P 6275 2125
 F 0 "SW28" H 6275 2358 60  0000 C CNN
@@ -358,7 +358,7 @@ F 3 "" H 6275 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW29
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW29
 U 1 1 5DC76E8E
 P 7100 2125
 F 0 "SW29" H 7100 2358 60  0000 C CNN
@@ -369,7 +369,7 @@ F 3 "" H 7100 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW30
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW30
 U 1 1 5DC76E94
 P 7950 2125
 F 0 "SW30" H 7950 2358 60  0000 C CNN
@@ -380,7 +380,7 @@ F 3 "" H 7950 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW31
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW31
 U 1 1 5DC76E9A
 P 8825 2125
 F 0 "SW31" H 8825 2358 60  0000 C CNN
@@ -391,7 +391,7 @@ F 3 "" H 8825 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW32
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW32
 U 1 1 5DC76EA0
 P 9650 2125
 F 0 "SW32" H 9650 2358 60  0000 C CNN
@@ -402,7 +402,7 @@ F 3 "" H 9650 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW33
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW33
 U 1 1 5DC76EA6
 P 10500 2125
 F 0 "SW33" H 10500 2358 60  0000 C CNN
@@ -413,7 +413,7 @@ F 3 "" H 10500 2125 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW34
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW34
 U 1 1 5DC92C4C
 P 1200 2700
 F 0 "SW34" H 1200 2933 60  0000 C CNN
@@ -424,7 +424,7 @@ F 3 "" H 1200 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW35
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW35
 U 1 1 5DC92C52
 P 2025 2700
 F 0 "SW35" H 2025 2933 60  0000 C CNN
@@ -435,7 +435,7 @@ F 3 "" H 2025 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW36
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW36
 U 1 1 5DC92C58
 P 2875 2700
 F 0 "SW36" H 2875 2933 60  0000 C CNN
@@ -446,7 +446,7 @@ F 3 "" H 2875 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW38
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW38
 U 1 1 5DC92C64
 P 4525 2700
 F 0 "SW38" H 4525 2933 60  0000 C CNN
@@ -457,7 +457,7 @@ F 3 "" H 4525 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW40
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW40
 U 1 1 5DC92C70
 P 6275 2700
 F 0 "SW40" H 6275 2933 60  0000 C CNN
@@ -468,7 +468,7 @@ F 3 "" H 6275 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW41
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW41
 U 1 1 5DC92C76
 P 7100 2700
 F 0 "SW41" H 7100 2933 60  0000 C CNN
@@ -479,7 +479,7 @@ F 3 "" H 7100 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW42
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW42
 U 1 1 5DC92C82
 P 8825 2700
 F 0 "SW42" H 8825 2933 60  0000 C CNN
@@ -490,7 +490,7 @@ F 3 "" H 8825 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW43
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW43
 U 1 1 5DC92C88
 P 9650 2700
 F 0 "SW43" H 9650 2933 60  0000 C CNN
@@ -501,7 +501,7 @@ F 3 "" H 9650 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW44
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW44
 U 1 1 5DC92C8E
 P 10500 2700
 F 0 "SW44" H 10500 2933 60  0000 C CNN
@@ -1265,7 +1265,7 @@ Connection ~ 1500 2125
 Wire Wire Line
 	1500 2125 1500 2700
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW39
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW39
 U 1 1 5DDDF5D3
 P 6225 3300
 F 0 "SW39" H 6225 3533 60  0000 C CNN
@@ -1276,7 +1276,7 @@ F 3 "" H 6225 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW37
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW37
 U 1 1 5DDF43CC
 P 2800 3325
 F 0 "SW37" H 2800 3558 60  0000 C CNN
@@ -1387,7 +1387,7 @@ Wire Wire Line
 	6575 3300 6525 3300
 Connection ~ 6575 2700
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW45
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW45
 U 1 1 5DC53CBA
 P 275 1575
 F 0 "SW45" H 275 1808 60  0000 C CNN
@@ -1409,7 +1409,7 @@ Wire Wire Line
 	-25  1625 -25  1575
 Connection ~ 900  1625
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW46
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW46
 U 1 1 5DDA954C
 P 300 2075
 F 0 "SW46" H 300 2308 60  0000 C CNN
@@ -1431,7 +1431,7 @@ Wire Wire Line
 	0    2125 900  2125
 Connection ~ 900  2125
 $Comp
-L romeo-pcb-rescue:KEYSW-keyboard_parts SW47
+L juliet-pcb-rescue:KEYSW-keyboard_parts SW47
 U 1 1 5DDEC3B1
 P 2025 2125
 F 0 "SW47" H 2025 2358 60  0000 C CNN
@@ -1479,18 +1479,18 @@ U 1 1 5EB09C42
 P 8550 4400
 F 0 "EC1" H 8550 4767 50  0000 C CNN
 F 1 "Rotary_Encoder_Switch" H 8550 4676 50  0000 C CNN
-F 2 "" H 8400 4560 50  0001 C CNN
+F 2 "keebio:RotaryEncoder_EC11" H 8400 4560 50  0001 C CNN
 F 3 "~" H 8550 4660 50  0001 C CNN
 	1    8550 4400
 	1    0    0    -1  
 $EndComp
 Text GLabel 7200 4500 2    50   Input ~ 0
 reset
-Text GLabel 5900 4300 0    50   Input ~ 0
+Text GLabel 5900 4500 0    50   Input ~ 0
 row0
 Text GLabel 5900 4400 0    50   Input ~ 0
 row1
-Text GLabel 5900 4500 0    50   Input ~ 0
+Text GLabel 5900 4300 0    50   Input ~ 0
 row2
 Text GLabel 5900 4600 0    50   Input ~ 0
 row3
@@ -1510,12 +1510,14 @@ Text GLabel 5900 5300 0    50   Input ~ 0
 col6
 Text GLabel 5900 5400 0    50   Input ~ 0
 col7
-Text GLabel 7200 5400 2    50   Input ~ 0
-col8
-Text GLabel 7200 5300 2    50   Input ~ 0
-col9
-Text GLabel 7200 5200 2    50   Input ~ 0
-col10
 Text GLabel 7200 5100 2    50   Input ~ 0
+col8
+Text GLabel 7200 5200 2    50   Input ~ 0
+col9
+Text GLabel 7200 5300 2    50   Input ~ 0
+col10
+Text GLabel 7200 5400 2    50   Input ~ 0
 col11
+Text GLabel 7200 4300 2    50   Input ~ 0
+RAW
 $EndSCHEMATC
