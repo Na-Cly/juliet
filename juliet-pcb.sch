@@ -1475,13 +1475,13 @@ F 3 "" H 6500 4950 50  0001 C CNN
 $EndComp
 Text GLabel 7200 4500 2    50   Input ~ 0
 reset
-Text GLabel 5900 4500 0    50   Input ~ 0
+Text GLabel 7200 4700 2    50   Input ~ 0
 row0
 Text GLabel 5900 4400 0    50   Input ~ 0
 row1
 Text GLabel 5900 4300 0    50   Input ~ 0
 row2
-Text GLabel 5900 4600 0    50   Input ~ 0
+Text GLabel 7200 4800 2    50   Input ~ 0
 row3
 Text GLabel 5900 4700 0    50   Input ~ 0
 col0
@@ -1509,4 +1509,10 @@ Text GLabel 7200 5400 2    50   Input ~ 0
 col11
 Text GLabel 7200 4300 2    50   Input ~ 0
 RAW
+Text GLabel 5900 4500 0    50   Input ~ 0
+GND
+Text GLabel 5900 4600 0    50   Input ~ 0
+GND
+Text GLabel 7200 4400 2    50   Input ~ 0
+GND
 $EndSCHEMATC
