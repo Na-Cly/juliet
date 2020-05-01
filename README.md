@@ -2,7 +2,7 @@
 ### A pro micro compatible Romeo
 #### forked from https://github.com/coseyfannitutti/romeo
 
-PCB Compatible with other romeo parts.
+PCB Compatible with other romeo parts. Only PCB was customized. Other components still labeled Romeo where applicable.
 
 Changes
 - Updated schematic to use pro micro
