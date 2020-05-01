@@ -1511,14 +1511,11 @@ Text GLabel 5900 4600 0    50   Input ~ 0
 GND
 Text GLabel 7200 4400 2    50   Input ~ 0
 GND
-Text GLabel 7200 4800 2    50   Input ~ 0
-row3
 Text GLabel 7200 4700 2    50   Input ~ 0
+row3
+Text GLabel 7200 4800 2    50   Input ~ 0
 row0
-Text GLabel 7200 4600 2    50   Input ~ 0
-NO-OP1
-Text GLabel 7200 4900 2    50   Input ~ 0
-NO-OP2
-Text GLabel 7200 5000 2    50   Input ~ 0
-NO-OP3
+NoConn ~ 7200 4600
+NoConn ~ 7200 4900
+NoConn ~ 7200 5000
 $EndSCHEMATC
