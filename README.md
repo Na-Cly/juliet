@@ -13,5 +13,5 @@ Changes
 These changes will require a different firmware than the romeo firmware which has not been pushed to qmk.
 
 matrix:
-rows { F4, D2, D3, F5 }
+rows { F5, D2, D3, F4 }
 cols { D1, D0, D4, C6, D7, E6, B4, B5, B1, B3, B2, B6}
